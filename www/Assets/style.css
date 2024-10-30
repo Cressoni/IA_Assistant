@@ -45,12 +45,13 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient( #6b72ff00 50%, #000dff3b 40%);
+    background-image: radial-gradient( #6b72ff00 50%, #d900ff3b 40%);
     box-shadow: 0 0 50 px rgb(25, 0, 255), insert 0 0 50px rgb(25, 0, 255);
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
     transition: 0.5s;
-    animation: animante3 10s linear infinite;
+    animation: animante3 2s linear infinite;   
 }
+
 
 @keyframes animate1 {
     0%{

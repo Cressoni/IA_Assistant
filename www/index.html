@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,19 @@
 
     <!-- BOOTSTRAP -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
     <!-- BOOTSTRAP ICONS -->
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
+
     <!-- PARTICLES JS -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        type="text/javascript"></script>
+
     <!-- MAIN CSS -->
 
     <link rel="stylesheet" href="./Assets/style.css">
@@ -27,68 +30,99 @@
     <link rel="stylesheet" href="./Assets/vendore/texllate/animate.css">
 
 </head>
+
 <body>
-    
 
-    <Section id="Oval" class="mb-4">
+    <div class="container">
 
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <div class="d-flex justify-content-center align-items-center" style="height: 80vh;">
-                    
-                    <canvas id="canvasOne" width="700" height="420" style="position: absolute;"></canvas>
-                    
-                    <div id="HelenaHood">
-                        <div class="square">
-                            <span class="circle"></span>
-                            <span class="circle"></span>
-                            <span class="circle"></span>
+
+
+
+        <Section id="Oval" class="mb-4" hidden>
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 80vh;">
+
+                        <canvas id="canvasOne" width="700" height="420" style="position: absolute;"></canvas>
+
+                        <div id="HelenaHood">
+                            <div class="square">
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                            </div>
+
                         </div>
-                    
+
+
+                    </div>
+                    <h5 class="text-light text text-center">Ask me anything</h5>
+
+                    <div class="col-md-12"></div>
+                </div>
+                <div class="col-md-12 mt-4 pt-4">
+                    <div class="text-center">
+                        <div id="TextInput" class="d-flex">
+
+                            <input type="text" class="input-field" name="chatbot" id="chatbot"
+                                placeholder="type here ... ">
+                            <button id="MicBin" class="glow-on-hover"><i class="bi bi-mic"></i></button>
+                            <button id="ChatBin" class="glow-on-hover"><i class="bi bi-chat-square-dots"></i></button>
+                            <button id="SettingsBin" class="glow-on-hover"><i class="bi bi-gear"></i></button>
+                        </div>
                     </div>
 
-                
                 </div>
-                <h5 class="text-light text text-center" >Ask me anything</h5>
 
-                <div class="col-md-12"></div>
+
             </div>
-            <div class="col-md-12 mt-4 pt-4">
-                <div class="text-center">
-                    <div id="TextInput" class="d-flex">
-                        
-                        <input type="text" class="input-field" name="chatbot" id="chatbot" placeholder="type here ... ">
-                        <button id="MicBin" class="glow-on-hover"><i class="bi bi-mic"></i></button>
-                        <button id="ChatBin" class="glow-on-hover"><i class="bi bi-chat-square-dots"></i></button>
-                        <button id="SettingsBin" class="glow-on-hover"><i class="bi bi-gear"></i></button>
+
+        </Section>
+
+        <section id="SiriWave" class="mb-4">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-center align-items-center" style="height:100vh;">
+                            
+                            <div clas="">
+                                <p class="text-start text-light mb-4 siri-message">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+                                <div id="siri-container"></div>
+                            </div>       
+                        </div>
                     </div>
                 </div>
-
             </div>
+        </section>
 
-
-        </div>
-
-    </Section>
-
+    </div>
+    
     <!--Jquery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
     <!--BootStrap-->>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
     <!--Particles JS-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://aax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
-    <script src="./Assets/script.js"></script>
+    <script src="./Assets/main.js"></script>
+
+
+    <!--SIRI WAVE-->
+    <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
 
     <!--TEXTLATE-->
     <script src="./Assets/vendore/texllate/jquery.fittext.js"></script>
     <script src="./Assets/vendore/texllate/jquery.lettering.js"></script>
-	<script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
+    <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
 
     <script src="./Assets/main.js"></script>
     <script type="text/javascript" src="/eel.js"></script>
@@ -96,4 +130,5 @@
 
 
 </body>
+
 </html>

@@ -38,5 +38,15 @@ $(document).ready(function () {
         }
     })
 
+    //Mic Button clic event
+    $(MicBin).click(function (e) { 
+        eel.playAssistantSound()
+        $("#Oval").attr("hidden", true);
+        $("#SiriWave").attr("hidden", false);
+        
+    });
+
+
+
 });
 

@@ -19,7 +19,7 @@ def takecomand():
     
     with sr.Microphone() as source:
         print('Estou te ouvindo...')
-        eel.DisplayMessage('listening...')
+        eel.DisplayMessage('Escutando...')
         r.pause_threshold = 1
         r.adjust_for_ambient_noise(source)
 
@@ -27,7 +27,7 @@ def takecomand():
     
     try:
         print('Reconhecendo')
-        eel.DisplayMessage('Recognizing...')
+        eel.DisplayMessage('Reconhecendo...')
         query = r.recognize_google(audio, language='pt-br')
         print(f"Voce disse: {query}")
         eel.DisplayMessage(query)

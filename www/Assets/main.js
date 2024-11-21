@@ -36,16 +36,16 @@ $(document).ready(function () {
             effect: "fadeOutUp",
             sync: true,
         }
-    })
-
-    //Mic Button clic event
-    $(MicBin).click(function (e) { 
-        $("#Oval").attr("hidden", true);
-        $("#SiriWave").attr("hidden", false);
-        eel.takecomand()()
-        
     });
 
+    // mic button click event
+
+    $("#MicBin").click(function () { 
+        eel.playAssistantSound
+        $("Oval").attr("hidden", true);
+        $("SiriWave").attr("hidden", false);
+        
+    });
 
 
 });

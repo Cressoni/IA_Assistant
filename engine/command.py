@@ -13,30 +13,29 @@ def speak(text):
 
 
 @eel.expose
-def takecomand():
+def takecommand():
 
     r = sr.Recognizer()
-    
+
     with sr.Microphone() as source:
-        print('Estou te ouvindo...')
-        eel.DisplayMessage('Escutando...')
+        print('listening....')
+        eel.DisplayMessage('listening....')
         r.pause_threshold = 1
         r.adjust_for_ambient_noise(source)
-
+        
         audio = r.listen(source, 10, 6)
-    
+
     try:
-        print('Reconhecendo')
-        eel.DisplayMessage('Reconhecendo...')
-        query = r.recognize_google(audio, language='pt-br')
-        print(f"Voce disse: {query}")
+        print('recognizing')
+        eel.DisplayMessage('recognizing....')
+        query = r.recognize_google(audio, language='en-in')
+        print(f"user said: {query}")
         eel.DisplayMessage(query)
-        speak(query)
-        eel.ShowHood()
+       
     except Exception as e:
         return ""
     
-
     return query.lower()
+
 
 

@@ -36,17 +36,28 @@ $(document).ready(function () {
             effect: "fadeOutUp",
             sync: true,
         }
-    });
+    })
 
-    // mic button click event
-
-    $("#MicBin").click(function () { 
-        eel.playAssistantSound
-        $("Oval").attr("hidden", true);
-        $("SiriWave").attr("hidden", false);
+    //Mic Button clic event
+    $(MicBin).click(function (e) { 
+        eel.playSiriSound()
+        $("#Oval").attr("hidden", true);
+        $("#SiriWave").attr("hidden", false);
+        eel.allComands()()
         
     });
 
+    function doc_keyUp(e) {
+        // this would test for whichever key is 40 (down arrow) and the ctrl key at the same time
+
+        if (e.key === 'c' && e.metaKey) {
+            eel.playAssistantSound()
+            $("#Oval").attr("hidden", true);
+            $("#SiriWave").attr("hidden", false);
+            eel.allCommands()()
+        }
+    }
+    document.addEventListener('keyup', doc_keyUp, false);
 
 });
 
